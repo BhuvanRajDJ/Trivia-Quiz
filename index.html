@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trivia Game</title>
+</head>
+<body>
+<!-- Audio for background music -->
+ <audio src="src/focus.mp3" controls loop autoplay hidden></audio>
+    <!-- Input for Players' Names -->
+    <div id="playersinput" >
+        <h1>Trivia</h1>
+        <input type="text" id="name1" placeholder="Enter Player 1 name" ><br>
+        <input type="text" id="name2" placeholder="Enter Player 2 name" ><br>
+    <button id="Next" type="button">Next➞</button>
+    </div>
+
+    <!-- Select Category -->
+    <div id="categories" style="display: none;">
+        <h3>Select the category</h3>
+        <select name="categories" id="category">
+            <option value="" disabled selected>Select an option</option> <!-- Placeholder option -->
+            <option id="science" value="science">Science</option>
+            <option id="general_knowledge" value="general_knowledge">General Knowledge</option>
+            <option id="music" value="music">Music</option>
+            <option id="geography" value="geography">Geography</option>
+            <option id="film_and_tv" value="film_and_tv">Film and TV</option>
+            <option id="society_and_culture" value="society_and_culture">Society and Culture</option>
+            <option id="history" value="history">History</option>
+        </select><br>
+        <!-- Start Button -->
+        <button id="start">Start Quiz</button>        
+    </div>
+    <div id="endthe-game" style="display: none;">
+        <h3>Note: To continue, select a different option that you have not chosen yet.</h3>
+        <button id="End_Game" >End_Game</button>
+    </div>
+    
+ 
+   
+
+   <!-- Display Players' Names -->
+   <div id="players" style="display: none;">
+    <h3 id="player1name">Player 1: <span id="displayPlayer1"></span> Score: <span id="plyscore1"></span></h3>
+    <h3 id="player2name">Player 2: <span id="displayPlayer2"></span> Score: <span id="plyscore2"></span></h3>
+</div>
+
+
+<!-- Display Question and Options -->
+<div id="questionContainer" style="display: none ;">
+    <h4 id="question">Loading Question... </h4>
+    <div id="options">
+        <button id="option1" type="button" data-option="">loading... Option 1</button><br>
+        <button id="option2" type="button" data-option="">loading...  Option 2</button><br>
+        <button id="option3" type="button" data-option="">loading... Option 3</button><br>
+        <button id="option4" type="button" data-option="">loading... Option 4</button><br>
+
+    </div>
+    <button id="end_game" type="button" >End Game</button>
+    <br>
+</div>
+
+<!-- Display winners -->
+<div id="win" style="display: none;">
+    <h3 id="first">Winner: 🥇 <span id="Winner"></span>,  Score: <span id="Score1"></span></h3>
+    <h3 id="second">Try Again!🥈 <span id="Looser"></span>,  Score: <span id="Score2"></span></h3>
+    <h3 id="tie"></h3>
+    <a href="index.html" id="play_again"><button id="playagainbutton">Play Again</button></a>
+</div>
+
+
+<!-- Script for Quiz Logic -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+body {
+  background-color: rgb(4, 36, 99);
+}
+
+button:hover {
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* playrs input */
+#playersinput {
+  /* background-color: rgb(160, 12, 155); */
+  background-color: aliceblue;
+  border-radius: 5%;
+  width: 70%;
+  height: 30vh;
+  margin: 10% auto;
+  display: grid;
+  grid-gap: 2%;
+  padding: 2%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4em 18% 18% 18%;
+  grid-template-areas:
+    "heading"
+    "input1"
+    "input2"
+    "Button";
+}
+
+#playersinput h1 {
+  grid-area: heading;
+  justify-self: center;
+  font-family: sans-serif, Arial;
+}
+
+#name1 {
+  grid-area: input1;
+  border-color: black;
+  border-width: 1%;
+}
+
+#name2 {
+  grid-area: input2;
+  border-radius: 5%;
+  border-color: black;
+  border-width: 1%;
+}
+
+#Next {
+  grid-area: Button;
+  border-radius: 5%;
+  background-color: rgb(7, 138, 94);
+}
+
+#categories {
+  background-color: aliceblue;
+  border-radius: 5%;
+  width: 70%;
+  height: 30vh;
+  margin: 10% auto;
+  display: grid;
+  grid-gap: 2%;
+  padding: 2%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4em 18% 18% 18%;
+  grid-template-areas:
+    "select"
+    "category"
+    "Button"
+    "End";
+}
+
+#categories h3 {
+  justify-self: center;
+  font-family: sans-serif, Arial;
+}
+
+#category {
+  grid-area: category;
+  border-color: black;
+  border-width: 1%;
+  font-family: sans-serif, Arial;
+}
+
+#category option {
+  font-size: 0.9em;
+}
+
+#start {
+  grid-area: Button;
+  background-color: rgb(7, 138, 94);
+  font-family: Arial;
+}
+
+#endthe-game {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: ; */
+  font-family: sans-serif, Arial;
+  width: 65%;
+  border-radius: 10%;
+  margin: 10% auto;
+  background-color: aliceblue;
+  align-items: center;
+  padding: 5%;
+}
+
+#endthe-game h3 {
+  font-size: 0.8em;
+  color: rgb(171, 10, 10);
+}
+
+#endthe-game button {
+  background-color: brown;
+  width: 100%;
+  height: 5.5vh;
+  justify-self: center;
+  align-self: center;
+}
+
+#players {
+  background-color: cadetblue;
+  width: 80%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 30% 30%;
+  /* justify-content: center; */
+  align-content: center;
+  grid-template-areas:
+    "player1"
+    "player2";
+}
+
+#players h3 {
+  font-size: 1.1em;
+  padding: 2%;
+  color: rgb(0, 0, 0);
+}
+
+#player1name {
+  grid-area: player1;
+}
+#player2name {
+  grid-area: player2;
+}
+
+#displayPlayer1 {
+  color: rgb(141, 29, 29);
+}
+#displayPlayer2 {
+  color: rgb(215, 188, 14);
+}
+
+#plyscore1 {
+  color: rgb(141, 29, 29);
+}
+#plyscore2 {
+  color: rgb(215, 188, 14);
+}
+
+#questionContainer {
+  width: 60%;
+  height: 68vh;
+  margin: 18% auto;
+  background-color: rgb(248, 248, 242);
+  padding: 3%;
+  font-size: 1.5em;
+  display: grid;
+  grid-template-rows: 40% 48% 10%;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+  font-family: sans-serif, Arial;
+
+  grid-template-areas:
+    "question"
+    "options"
+    "Button";
+}
+
+#question {
+  border-style: solid;
+  padding: 5%;
+  border-color: grey;
+  justify-self: center;
+  grid-area: question;
+  font-size: 0.8em;
+}
+
+#options {
+  display: inherit;
+  grid-gap: 3.1%;
+  grid-template-rows: repeat(4, 20%);
+  font-family: sans-serif, Arial;
+  grid-template-areas:
+    "option1"
+    "option2"
+    "option3"
+    "option4";
+}
+
+#option1 {
+  grid-area: option1;
+  background-color: rgb(222, 200, 135);
+}
+#option2 {
+  grid-area: option2;
+  background-color: rgb(222, 200, 135);
+}
+#option3 {
+  grid-area: option3;
+  background-color: rgb(222, 200, 135);
+}
+#option4 {
+  grid-area: option4;
+  background-color: rgb(222, 200, 135);
+}
+
+#end_game {
+  background-color: rgb(233, 110, 62);
+}
+
+#win {
+  /* background-color: rgb(160, 12, 155); */
+  background-color: aliceblue;
+  border-radius: 5%;
+  width: 70%;
+  height: 30vh;
+  margin: 10% auto;
+  display: grid;
+  grid-gap: 2%;
+  padding: 2%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 20% 20% 20%;
+  grid-template-areas:
+    "winner"
+    "runner"
+    "tie"
+    "Button";
+  justify-content: center;
+  align-content: center;
+  font-family: sans-serif, Arial;
+}
+
+#play_again {
+  display: inherit;
+  text-decoration: none;
+  font-size: 0.89em;
+}
+
+#playagainbutton {
+  display: inherit;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  background-color: #e8c500;
+}
+#first {
+  grid-area: winner;
+  font-size: 0.89em;
+  color: #e8c500;
+}
+#second {
+  grid-area: runner;
+  font-size: 0.89em;
+  color: cornflowerblue;
+}
+
+#tie {
+  font-family: sans-serif, Arial;
+  color: brown;
+}
