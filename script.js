@@ -122,7 +122,7 @@ async function fetchQuestion() {
 
     // fetch question
     const response = await fetch(
-      `https://the-trivia-api.com/v2/questions?limit=1&categories=${category}&difficulties=${difficultylevel}`
+      `https://the-trivia-api.com/v2/questions?limit=1&categories=${category_selected}&difficulties=${difficultylevel}`
     );
     if (!response.ok) {
       // throw new actual error
