@@ -60,7 +60,7 @@ document
         document.getElementById("players").style.display = "grid";
         // fetchQuestion(categories_selected);
         // call the function to fetch the function
-        fetchQuestion(categories_selected);
+        fetchQuestion();
         document.getElementById("questionContainer").style.display = "grid";
         // alert("category" + categories_selected);
       } else {
